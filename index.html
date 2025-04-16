@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sección de redes y botón -->
+  <div class="network-background">
+    <div class="container">
+      <button id="download-btn" onclick="window.location.href='ruta-al-resume.pdf'">Descargar Resume</button>
+    </div>
+  </div>
+
+  <!-- Sección de About Me -->
+  <section id="about-me">
+    <div class="about-content">
+      <div class="about-image">
+        <img src="assets/imagen1.jpg" alt="Sobre mí">
+      </div>
+      <div class="about-text">
+        <h2>Who I Am</h2>
+        <p>Tu descripción personal aquí...</p>
+        <h2>What I Do</h2>
+        <p>Tu descripción profesional aquí...</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="particles.min.js"></script>
+  <script>
+    // Script para el fondo de redes
+    particlesJS("network-background", {
+      particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        move: { speed: 1 }
+      }
+    });
+  </script>
+</body>
+</html>
