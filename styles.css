@@ -1,0 +1,71 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Fondo de redes */
+.network-background {
+  height: 100vh;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#download-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#download-btn:hover {
+  background-color: #feb47b;
+}
+
+/* Sección About Me */
+#about-me {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-image img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.1);
+}
+
+.about-text {
+  margin-left: 20px;
+}
+
+.about-text h2 {
+  font-size: 24px;
+}
+
+.about-text p {
+  font-size: 18px;
+}
